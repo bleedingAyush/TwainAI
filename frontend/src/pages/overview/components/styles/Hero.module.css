@@ -1,0 +1,213 @@
+.getAccessTo {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.loginsignUp,
+.workWithAn {
+  display: flex;
+  align-items: center;
+}
+.workWithAn {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: inherit;
+  height: 6.23rem;
+  flex-shrink: 0;
+  color: #393939;
+}
+.loginsignUp {
+  position: absolute;
+  top: 0.5rem;
+  right: 2.39rem;
+  font-weight: 600;
+  justify-content: center;
+  width: 7.76rem;
+  height: 1.06rem;
+}
+.loginsignUpWrapper {
+  text-decoration: none;
+  width: 12.56rem;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 2px solid var(--blue);
+  box-sizing: border-box;
+  height: 2.06rem;
+  color: inherit;
+}
+.addToChrome1 {
+  position: absolute;
+  top: calc(50% - 13.1px);
+  right: 1.34rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.34rem;
+  height: 1.63rem;
+}
+.googleChromeIconFebruary2 {
+  position: absolute;
+  top: calc(50% - 10.1px);
+  right: 10.06rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+}
+.addToChrome {
+  text-decoration: none;
+  width: 12.56rem;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: #1c3158;
+  height: 2.19rem;
+  font-size: var(--font-size-lg);
+  color: var(--white);
+}
+.getAccessToChatgptWithAKParent,
+.headerElements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headerElements {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 0.13rem;
+  gap: var(--gap-6xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--black);
+}
+.getAccessToChatgptWithAKParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+.frameChild {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.desktop2,
+.frameParent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.frameParent {
+  flex-direction: row;
+  padding: 0 0.94rem;
+  gap: var(--gap-63xl);
+  max-width: 75rem;
+}
+.desktop2 {
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 2.5rem 4.5rem;
+  text-align: left;
+  font-size: 2.88rem;
+  color: var(--black);
+}
+
+.featureText {
+  font-size: 2.625rem;
+  font-weight: 600;
+}
+
+.featureWrapper {
+  flex: 1 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .frameParent {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .getAccessTo,
+  .workWithAn,
+  .featureText {
+    text-align: center;
+  }
+  .featureWrapper {
+    margin-top: 5rem;
+  }
+  .headerElements {
+    align-items: center;
+    justify-content: center;
+  }
+  .frameChild,
+  .getAccessToChatgptWithAKParent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frameParent {
+    flex-direction: column;
+    /* gap: var(--gap-63xl);
+     */
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .getAccessTo {
+    font-size: 2.25rem;
+  }
+  .featureText {
+    font-size: 2rem;
+  }
+  .workWithAn {
+    font-size: var(--font-size-lg);
+  }
+  .headerElements {
+    display: flex;
+  }
+  .frameChild {
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 15.63rem;
+  }
+  .desktop2,
+  .frameParent {
+    padding-left: var(--padding-5xs);
+    padding-right: var(--padding-5xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .getAccessTo {
+    font-size: 2.13rem;
+  }
+  .featureText {
+    font-size: 1.875rem;
+  }
+  .headerElements {
+    flex-direction: column;
+    gap: var(--gap-6xl);
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: var(--gap-63xl);
+  }
+  .desktop2,
+  .frameParent {
+    padding-left: var(--padding-5xs);
+    padding-right: var(--padding-5xs);
+    box-sizing: border-box;
+  }
+}

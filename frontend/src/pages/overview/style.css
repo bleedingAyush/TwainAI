@@ -1,0 +1,133 @@
+.overview-nav-container {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.overview-nav-container .logo-img {
+  height: 2.7rem;
+}
+
+.overview-nav-container .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.overview-nav-container .logo-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #1c3158;
+}
+
+.google-chrome-svg {
+  height: 1.2rem;
+}
+
+.login-signup-container,
+.add-to-chrome-container {
+  text-decoration: none;
+}
+
+.login-signup-btn {
+  font-weight: 500;
+  /* border: 2px solid #2166cd; */
+  border-radius: 4px;
+  /* padding: 0.2rem 0.8rem; */
+  color: var(--blue);
+}
+.login-signup-btn.sidebar-btn {
+  font-weight: 500;
+  border: 2px solid #2166cd;
+  border-radius: 4px;
+  padding: 0.2rem 0.8rem;
+  color: var(--blue);
+}
+
+.add-to-chrome-container {
+  padding: 0.3rem 0.5rem;
+  color: var(--white);
+  background-color: #1c3158;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.add-to-chrome-btn {
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.header-elements {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu-svg {
+  display: none;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .header-elements {
+    display: none;
+  }
+  .menu-svg {
+    display: block;
+  }
+  .overview-nav-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .overview-nav-container .logo-text {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .overview-nav-container .logo-img {
+    height: 1.8rem;
+  }
+
+  .sidebar-menu-svg {
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: max(45%, 250px);
+    max-width: 65%; /* Adjust as needed */
+    height: 100vh;
+    background-color: var(--white);
+    padding: 4rem 2rem;
+    transform: translateX(100%);
+    z-index: 20;
+    transition: 300ms ease;
+    will-change: transform;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}
